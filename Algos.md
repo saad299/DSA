@@ -9,6 +9,7 @@ Each problem below has a short task description (written from scratch, not copie
 ### 1. Contains Duplicate — *Arrays & Hashing*
 Given an array of integers, return `true` if any value appears at least twice, `false` if all values are distinct.
 **Example:** `[1,2,3,1]` → `true` | `[1,2,3,4]` → `false`
+Can be done using `hash set`, `sorting`, `brute force`, `brute force nested loops` Approaches
 
 ### 2. Valid Anagram — *Arrays & Hashing*
 Given two strings, return `true` if the second is an anagram of the first (same letters, same frequency, different order allowed).
