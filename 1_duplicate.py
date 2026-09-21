@@ -1,3 +1,7 @@
+# Arrays $ Hashing - Contains duplicate items in an array
+
+# It was solved using brute force nested loops approach.
+
 num = [1, 2, 5, 4]
 
 def duplicate(num):
@@ -8,3 +12,17 @@ def duplicate(num):
     return False
 
 print(duplicate(num))
+
+
+
+"""
+The following is the hash set approach
+
+def containsDuplicate(nums):
+    seen = set()
+    for num in nums:
+        if num in seen:
+            return True
+        seen.add(num)
+    return False
+"""
