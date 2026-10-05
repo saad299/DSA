@@ -42,3 +42,19 @@ Constraints:
 
 '''
 
+# hash map approach
+def twoSum(nums, target):
+    hash_map = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in hash_map:
+            return [hash_map[complement], i]
+        hash_map[num] = i
+    return []
+
+# test
+print(twoSum([2,7,11,15], 9)) # [0,1]
+print(twoSum([3,2,4], 6)) # [1,2]
+print(twoSum([3,3], 6)) # [0,1]
+print(twoSum([1,2,3,4,5], 8)) # [2,4]
+print(twoSum([1,2,3,4,5], 10)) # []
